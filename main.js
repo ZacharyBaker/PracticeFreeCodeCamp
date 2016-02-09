@@ -46,3 +46,17 @@ function slasher(arr, howMany) {
 }
 
 slasher([1, 2, 3], 2);
+//-------------------------------------
+
+function mutation(arr) {
+  var result;
+  //var thing1 = arr[0].split('');
+  var thing2 = arr[1].toLowerCase().split('');
+  for (var i = 0; i < thing2.length; i++){
+    if (arr[0].toLowerCase().indexOf(thing2[i]) !== -1) result = true;
+   else return false;
+  }
+  return result;
+}
+
+mutation(["hello", "hey"]);

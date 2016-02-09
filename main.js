@@ -71,3 +71,16 @@ function bouncer(arr) {
 }
 
 bouncer([7, "ate", "", false, 9]);
+//--------------------------------
+
+function destroyer(arr) {
+  // Remove all the values
+  for (var i = 1; i < arguments.length; i++){
+    for (var j = arr.length - 1; j >= 0; j--){
+      if (arguments[i] === arr[j]) arr.splice(j, 1);
+    }
+  }
+  return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);

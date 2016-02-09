@@ -60,3 +60,14 @@ function mutation(arr) {
 }
 
 mutation(["hello", "hey"]);
+//------------------------------
+
+function bouncer(arr) {
+  var myArr = [];
+  arr.forEach(function(e){
+    if (e) myArr.push(e);
+  })
+  return myArr;
+}
+
+bouncer([7, "ate", "", false, 9]);

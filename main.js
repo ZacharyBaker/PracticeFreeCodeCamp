@@ -178,3 +178,23 @@ function diff(arr1, arr2) {
 }
 
 diff([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+//---------------------------
+
+
+function convert(num) {
+  var romanArr = [];
+  var decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1],
+  roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
+  
+  for ( var i = 0; i < decimals.length; i++) {
+    if (decimals[i] <= num) {
+      num -= decimals[i];
+      romanArr.push(roman[i]);
+      i = -1;
+      
+    }
+  }
+  return romanArr.join('');
+}
+
+convert(36);

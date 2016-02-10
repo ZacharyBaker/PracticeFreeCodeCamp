@@ -198,3 +198,23 @@ function convert(num) {
 }
 
 convert(36);
+//---------------------------------
+
+function where2(collection, source) {
+  var arr = [];
+  var hasAllProps;
+  for (var i = 0; i < collection.length; i++){
+    for (var prop in source) {
+      if ( collection[i][prop] === source[prop]){
+        hasAllProps = true;
+      } else {
+        hasAllProps = false;
+        break;
+      }
+    }
+    if (hasAllProps) arr.push(collection[i]);
+  }
+  return arr;
+}
+
+where2([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });

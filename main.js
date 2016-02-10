@@ -144,3 +144,23 @@ function rot13(str) {
 
 // Change the inputs below to test
 rot13("SERR PBQR PNZC");
+//--------------------------------
+
+function sumAll(arr) {
+  var sum = 0;
+  var begin;
+  var end;
+  if( arr[0] > arr[1]) {
+    begin = arr[1];
+    end = arr[0];
+  } else {
+    begin = arr[0];
+    end = arr[1];
+  }
+  for (var i = begin; i<=end; i++){
+    sum += i;
+  }
+  return sum;
+}
+
+sumAll([1, 4]);

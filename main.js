@@ -284,3 +284,13 @@ function fearNotLetter(str) {
 }
 
 fearNotLetter("abce");
+//----------------------------------
+
+function boo(bool) {
+
+  if (typeof(bool) !== "boolean") return false;
+  else return true;
+
+}
+
+boo(null);

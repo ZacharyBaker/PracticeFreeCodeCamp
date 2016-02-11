@@ -271,3 +271,16 @@ function pair(str) {
 }
 
 pair("GCG");
+//-----------------------------
+
+function fearNotLetter(str) {
+  for (var i = 0; i < str.length; i++){
+    if (str.charCodeAt(i) - str.charCodeAt(i + 1) < -1) {
+      var num = str.charCodeAt(i) + 1;
+      return String.fromCharCode(num);
+    }
+  }
+  return undefined;
+}
+
+fearNotLetter("abce");

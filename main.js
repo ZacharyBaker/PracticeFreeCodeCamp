@@ -233,3 +233,26 @@ function myReplace(str, before, after) {
 }
 
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
+//----------------------------
+function translate(str) {
+  
+  str = str.split('');
+  if (/[aeiou]/.test(str[0])) {
+    str.push('way');
+    return str.join('');
+  } else {
+    for (var i = 0; i < str.length; i++){
+      if (/[^aeiou]/.test(str[0])){
+        str.push(str[0]);
+        str = str.slice(1);
+        i = -1;
+      } else {
+        str.push('ay');
+        str = str.join('');
+        return str;
+      }
+    }
+  }
+}
+
+translate("glove");

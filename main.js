@@ -256,3 +256,18 @@ function translate(str) {
 }
 
 translate("glove");
+//-------------------------
+
+function pair(str) {
+  var answer = [];
+  str = str.split('');
+  str.forEach(function(e){
+    if (e === "A") answer.push(["A", "T"]);
+    else if (e === "T") answer.push(["T", "A"]);
+    else if (e === "G") answer.push(["G", "C"]);
+    else if (e === "C") answer.push(["C", "G"]);
+  })
+  return answer;
+}
+
+pair("GCG");

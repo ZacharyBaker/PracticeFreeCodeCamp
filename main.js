@@ -294,3 +294,18 @@ function boo(bool) {
 }
 
 boo(null);
+//----------------------------
+
+function unite(arr1, arr2, arr3) {
+  var myArr = [];
+  for (var arg in arguments) {
+    
+    for (var i = 0; i < arguments[arg].length; i++){
+      if (myArr.indexOf(arguments[arg][i]) === -1) myArr.push(arguments[arg][i]);
+    }
+    
+  }
+  return myArr;
+}
+
+unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);

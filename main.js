@@ -218,3 +218,18 @@ function where2(collection, source) {
 }
 
 where2([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });
+//----------------------------------
+
+function myReplace(str, before, after) {
+  
+  before = before.split('');
+  after = after.split('');
+  if (before[0] == before[0].toUpperCase()) after[0] = after[0].toUpperCase();
+  before = before.join('');
+  after = after.join('');
+  
+  return str.replace(before, after);
+  
+}
+
+myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");

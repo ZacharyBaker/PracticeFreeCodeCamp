@@ -309,3 +309,11 @@ function unite(arr1, arr2, arr3) {
 }
 
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
+//---------------------------
+
+function convert(str) {
+  // &colon;&rpar;
+  return str;
+}
+
+convert("Dolce & Gabbana");

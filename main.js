@@ -311,6 +311,9 @@ function unite(arr1, arr2, arr3) {
 unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 //---------------------------
 
+
+//https://dev.w3.org/html5/html-author/charref check out this site
+
 function convert(str) {
   // &colon;&rpar;
   return str;

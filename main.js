@@ -320,7 +320,12 @@ unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 // " === &quot;
 
 function convert(str) {
-  // &colon;&rpar;
+  
+  str = str.replace(/[&]/g, "&amp;");
+  str = str.replace(/[']/g, "&apos;");
+  str = str.replace(/[<]/g, "&lt;");
+  str = str.replace(/[>]/g, "&gt;");
+  str = str.replace(/["]/g, "&quot;");
   return str;
 }
 

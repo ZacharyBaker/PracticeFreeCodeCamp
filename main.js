@@ -313,6 +313,11 @@ unite([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 
 //https://dev.w3.org/html5/html-author/charref check out this site
+// & === &​amp; 
+// ' === &apos;
+// < === &lt;
+// > === &gt;
+// " === &quot;
 
 function convert(str) {
   // &colon;&rpar;

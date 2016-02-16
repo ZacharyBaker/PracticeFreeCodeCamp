@@ -330,3 +330,11 @@ function convert(str) {
 }
 
 convert("Dolce & Gabbana");
+//------------------------------------------
+
+function spinalCase(str) {
+  return str.toLowerCase().replace(/\s/g, "-");
+  
+}
+
+spinalCase('This Is Spinal Tap');

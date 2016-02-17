@@ -341,7 +341,19 @@ spinalCase('This Is Spinal Tap');
 //-----------------------------------------
 
 function sumFibs(num) {
-  return num;
+  var sum = 0;
+  var fib = [1,1];
+  
+  while (fib[fib.length-1] + fib[fib.length-2] <= num){
+    fib.push(fib[fib.length-1] + fib[fib.length-2]);
+  }
+  
+  for (var i = 0; i < fib.length; i++){
+    if (fib[i] % 2 !== 0){
+      sum += fib[i];
+    }
+  }
+  return sum;
 }
 
 sumFibs(4);

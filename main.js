@@ -338,3 +338,10 @@ function spinalCase(str) {
 }
 
 spinalCase('This Is Spinal Tap');
+//-----------------------------------------
+
+function sumFibs(num) {
+  return num;
+}
+
+sumFibs(4);

@@ -357,3 +357,33 @@ function sumFibs(num) {
 }
 
 sumFibs(4);
+//-----------------------------------------------
+
+function sumPrimes(num) {
+  var primes = [];
+  
+  
+  for (var j = 2; j <= num; j++){
+  var isPrime = true;
+  
+  
+      for (var i = 2; i < j; i++) {
+
+        if (j % i === 0) {
+          isPrime = false;
+          break;
+        } else {
+
+        }
+      }
+      if (isPrime === true) primes.push(j);
+ 
+  }
+  
+  return primes.reduce(function(prev, current){
+    return prev + current;
+  });
+  
+}
+
+sumPrimes(10);

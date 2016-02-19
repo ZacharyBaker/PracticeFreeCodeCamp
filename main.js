@@ -387,3 +387,24 @@ function sumPrimes(num) {
 }
 
 sumPrimes(10);
+//------------------------------------------------
+
+function smallestCommons(arr) {
+  var lCM;
+  var myArr = [];
+  if (arr[1] < arr[0]){
+    myArr.push(arr[1]);
+    myArr.push(arr[0]);
+  } else {
+    myArr = arr;
+  }
+  var allNumsArr = [];
+  for (var i = myArr[0]; i <= myArr[1]; i++){
+    allNumsArr.push(i);
+  }
+  
+  
+}
+
+
+smallestCommons([1,5]);

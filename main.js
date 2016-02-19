@@ -403,6 +403,25 @@ function smallestCommons(arr) {
     allNumsArr.push(i);
   }
   
+  var numsToMultiply = [];
+  
+  for (var j = 10; j > 0; j--){
+    var passed = allNumsArr.every(function(currVal){
+      return currVal % j === 0;
+    });
+    
+      //numsToMultiply.push(j);
+    allNumsArr = allNumsArr.map(function(e){
+        if (e % j === 0) {
+          return e/j;
+        } else {
+          return e;
+        }
+    });
+    
+  }
+  
+  
   
 }
 

@@ -389,6 +389,8 @@ function sumPrimes(num) {
 sumPrimes(10);
 //------------------------------------------------
 
+//maybe this will help
+//http://stackoverflow.com/questions/31302054/how-to-find-the-least-common-multiple-of-a-range-of-numbers
 function smallestCommons(arr) {
   var lCM;
   var myArr = [];

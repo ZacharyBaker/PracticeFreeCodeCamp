@@ -429,3 +429,12 @@ function smallestCommons(arr) {
 
 
 smallestCommons([1,5]);
+
+
+//---------------------
+
+//INTERVIEW PROBS
+
+for (var i = 0; i <= 100; i+=5){
+	console.log(100-i);
+}

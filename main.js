@@ -438,3 +438,11 @@ smallestCommons([1,5]);
 for (var i = 0; i <= 100; i+=5){
 	console.log(100-i);
 }
+
+// original thought process
+
+function mine(){
+	for (var i = 100; i >= 0; i-=5){
+		console.log(i);
+	}
+}

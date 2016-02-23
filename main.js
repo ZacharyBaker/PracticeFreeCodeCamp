@@ -429,6 +429,49 @@ function smallestCommons(arr) {
 
 
 smallestCommons([1,5]);
+//--------------------------------
+
+function smallestCommons(arr) {
+  
+  var smallPrimes = [2, 3, 5, 7, 11, 13],
+      multiplyThese = [[],[],[],[],[],[]],
+      holders = [[],[],[],[],[],[]],
+      total = 1;
+  
+  var dividePrimes = function (num) {
+    for ( var i = 0; i < smallPrimes.length; i++) {
+      if (num % smallPrimes[i] === 0) {
+        holders[i].push(smallPrimes[i]);
+        dividePrimes(num / smallPrimes[i]);
+      }
+    }
+    for (var k = 0; k < multiplyThese.length; k++) {
+      if (holders[k].length > multiplyThese[k].length) {
+        multiplyThese[k] = holders[k];
+      }
+      holders[k] = [];
+    }
+  };
+  if (arr[0] > arr[1]) {
+    for (var j = arr[0]; j >= arr[1]; j--) {
+      dividePrimes(j);
+    }
+  } else {
+    for (var l = arr[1]; l >= arr[0]; l--) {
+      dividePrimes(l);
+    }
+  }
+  
+  for (var end = 0; end < multiplyThese.length; end++) {
+    if (multiplyThese[end].length > 0) {
+      total = total * Math.pow(smallPrimes[end], multiplyThese[end].length);
+    }
+  }
+  
+  console.log(total);
+  return total;
+  
+}
 
 
 //---------------------

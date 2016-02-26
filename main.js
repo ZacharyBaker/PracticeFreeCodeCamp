@@ -504,3 +504,15 @@ function find(arr, func) {
 }
 
 find([1, 2, 3, 4], function(num){ return num % 2 === 0; });
+//---------------------------------
+
+function drop(arr, func) {
+  for (var i = 0; i < arr.length; i++){
+    if (func(arr[i])) {return arr.slice(i);}
+    
+  }
+  
+  return [];
+}
+
+drop([1, 2, 3], function(n) {return n < 3; });

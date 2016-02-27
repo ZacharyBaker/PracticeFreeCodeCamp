@@ -516,3 +516,12 @@ function drop(arr, func) {
 }
 
 drop([1, 2, 3], function(n) {return n < 3; });
+
+//----------------------
+
+function steamroller(arr) {
+  
+  return arr;
+}
+
+steamroller([1, [2], [3, [[4]]]]);

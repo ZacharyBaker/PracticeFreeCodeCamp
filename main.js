@@ -523,8 +523,17 @@ drop([1, 2, 3], function(n) {return n < 3; });
 //http://stackoverflow.com/questions/10865025/merge-flatten-a-multidimensional-array-in-javascript
 
 function steamroller(arr) {
-  
-  return arr;
+
+  for ( var i = 0; i < arr.length; i++){
+    
+    if (Array.isArray(arr[i])) {
+      arr = [].concat.apply([], arr);
+      steamroller(arr);
+    }
+    
+  }
+ 
+ return [].concat.apply([], arr);
 }
 
 steamroller([1, [2], [3, [[4]]]]);

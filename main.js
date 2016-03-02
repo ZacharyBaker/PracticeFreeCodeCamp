@@ -539,6 +539,8 @@ function steamroller(arr) {
 steamroller([1, [2], [3, [[4]]]]);
 //------------------------------
 
+//resoure http://www.convertbinary.com/alphabet.php
+
 function binaryAgent(str) {
   return str;
 }

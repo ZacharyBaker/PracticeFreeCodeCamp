@@ -552,3 +552,13 @@ binaryAgent("01000001 01110010 01100101 01101110 00100111 01110100 00100000 0110
 function orderOperations () {
   return (2 + 2) * ((2 + 2) * 2);
 }
+
+//----------------------------------------------------
+
+function getSize(width, height, depth) {
+
+  var area = (2 * (width*height)) + (2 * (width*depth)) + (2 * (depth*height));
+  var volume = width * height * depth;
+  return [area, volume];
+
+}

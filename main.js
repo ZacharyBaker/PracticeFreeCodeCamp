@@ -472,8 +472,6 @@ function smallestCommons(arr) {
   return total;
   
 }
-
-
 //---------------------
 
 //INTERVIEW PROBS
@@ -541,6 +539,7 @@ steamroller([1, [2], [3, [[4]]]]);
 
 //resoure http://www.convertbinary.com/alphabet.php
 
+
 function binaryAgent(str) {
   return str;
 }
@@ -562,8 +561,17 @@ function getSize(width, height, depth) {
   return [area, volume];
 
 }
-
 //-------------------------------------------------
+
+function dudeMan(arr, func){
+	return arr.map(func);
+}
+
+dudeMan([1,2,3], function(e){
+	return e + 1;
+})
+
+//----------------------------------------------------------
 
 function knightVsKing(knightPosition, kingPosition) {
   // Three possible outputs are "Knight", "King" and "None".

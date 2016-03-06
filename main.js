@@ -576,4 +576,8 @@ dudeMan([1,2,3], function(e){
 function knightVsKing(knightPosition, kingPosition) {
   // Three possible outputs are "Knight", "King" and "None".
   // Happy Coding :)
+  
+  //find distance between points
+  //study board
+  
 }

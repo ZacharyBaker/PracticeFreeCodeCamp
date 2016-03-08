@@ -667,7 +667,7 @@ function knightVsKing(knightPosition, kingPosition) {
   return "None";
 }
 //better practice same idea
-function knightVsKing(knightPosition, kingPosition) {
+function knightVsKing2(knightPosition, kingPosition) {
   var diffX = Math.abs(knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt());
   var diffY = Math.abs(knightPosition[0] - kingPosition[0]);
   
@@ -677,4 +677,18 @@ function knightVsKing(knightPosition, kingPosition) {
     return 'Knight'
   } 
   return 'None';
+}
+
+//-----------------------------------------
+
+function every(collection, pre) {
+  
+  var truth = collection.every(function(e){
+    
+    return e[pre];
+    
+  });
+  
+  return truth;
+  
 }

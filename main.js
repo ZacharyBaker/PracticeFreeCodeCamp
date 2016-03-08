@@ -645,10 +645,24 @@ dudeMan([1,2,3], function(e){
 //----------------------------------------------------------
 
 function knightVsKing(knightPosition, kingPosition) {
-  // Three possible outputs are "Knight", "King" and "None".
-  // Happy Coding :)
+  if (knightPosition[0] - kingPosition[0] < 2 && knightPosition[0] - kingPosition[0] > -2){
+    if (knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() < 2 && knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() > -2){
+      return "King";
+    } 
+  }
   
-  //find distance between points
-  //study board
-  
+
+  if (knightPosition[0] - kingPosition[0] === 1 || knightPosition[0] - kingPosition[0] === -1){
+      if (knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() === 2 || knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() === -2){
+        return "Knight";
+      }
+    }
+
+  if (knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() === 1 || knightPosition[1].charCodeAt() - kingPosition[1].charCodeAt() === -1)
+    if (knightPosition[0] - kingPosition[0] === 2 || knightPosition[0] - kingPosition[0] === -2){
+      return "Knight";
+    }
+
+
+  return "None";
 }

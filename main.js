@@ -723,3 +723,6 @@ function none(arr, fun){
  return true;
 }
  
+ function none2(arr, fun){
+  return !arr.some(fun);
+}

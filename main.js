@@ -726,3 +726,13 @@ function none(arr, fun){
  function none2(arr, fun){
   return !arr.some(fun);
 }
+//----------------------------------
+
+function SafeInteger(n) {
+
+  if (n <= 9007199254740990){
+    return true;
+  }
+  return false;
+
+}

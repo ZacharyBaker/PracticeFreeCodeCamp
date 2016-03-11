@@ -714,6 +714,12 @@ add(2,3);
 //--------------------------------
 
 function none(arr, fun){
-  // ...
+  
+  for (var i = 0; i < arr.length; i++){
+    if (fun(arr[i]) === true){
+      return false;
+    }
+  }
+ return true;
 }
  

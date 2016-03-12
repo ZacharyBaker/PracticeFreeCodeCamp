@@ -706,10 +706,35 @@ function movieIsh () {
 //---------------------------------------
 
 function add() {
-  return false;
+  var valid;
+  for (var arg in arguments){
+    if (typeof(arguments[arg]) !== "number"){
+      valid = false;
+      break;
+    } else {
+      valid = true;
+      
+    }
+  }
+  if (valid){
+    if (arguments.length <= 1){
+      var y = arguments[0];
+      return function(x){
+        if (typeof(x) === 'number'){
+          return x + y;
+        } else {return undefined;}
+      };  
+    }
+    return arguments[0] + arguments[1];
+  } else {
+    
+    return undefined;
+    
+  }
 }
 
-add(2,3);
+add(2, 3);
+
 
 //--------------------------------
 

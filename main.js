@@ -761,3 +761,9 @@ function SafeInteger(n) {
   return false;
 
 }
+
+//-------------------------------------------
+
+function findStrangeValue() {
+  // your code!
+}

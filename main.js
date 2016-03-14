@@ -765,5 +765,6 @@ function SafeInteger(n) {
 //-------------------------------------------
 
 function findStrangeValue() {
-  // your code!
+  var x = {foo: 'bar'};
+  return x === x;
 }

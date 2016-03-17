@@ -768,3 +768,34 @@ function findStrangeValue() {
   var x = {foo: 'bar'};
   return x === x;
 }
+
+//------------------
+
+//Bug fix
+
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
+
+
+
+//--------------------------------------
+
+function swapValues() {
+    var args = Array.prototype.slice.call(arguments);
+    var temp = args[0];
+    args[0] = args[1];
+    args[1] = temp;
+}
+
+
+//-------------------------------
+
+function telephoneCheck(str) {
+  // Good luck!
+  return true;
+}
+
+
+
+telephoneCheck("555-555-5555");

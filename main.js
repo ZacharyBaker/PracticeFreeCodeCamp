@@ -791,6 +791,15 @@ function swapValues() {
 
 //-------------------------------
 
+class Person {
+  constructor() {
+  
+  }
+}
+
+
+//------------------------------------
+
 function telephoneCheck(str) {
   // Good luck!
   return true;

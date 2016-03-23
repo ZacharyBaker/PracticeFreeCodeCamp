@@ -792,11 +792,32 @@ function swapValues() {
 //-------------------------------
 
 class Person {
-  constructor() {
-  
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    }
+    get Info() {
+      return this.getInfo()
+    } 
+    
+    getInfo(){
+    return this.name + 's age is ' + this.age;
+    
   }
 }
 
+class Person2 {
+
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  get info() {
+    return `${this.name}s age is ${this.age}`;
+  }
+  
+}
 
 //------------------------------------
 

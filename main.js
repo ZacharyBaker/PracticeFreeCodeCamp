@@ -821,6 +821,12 @@ class Person2 {
 
 //------------------------------------
 
+function buildString(...template){
+  return `I like #{template.join(',')}`;
+}
+
+//----------------------------------
+
 function telephoneCheck(str) {
   // Good luck!
   return true;

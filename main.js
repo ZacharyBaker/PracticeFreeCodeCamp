@@ -825,6 +825,19 @@ function buildString(...template){
   return `I like #{template.join(',')}`;
 }
 
+//---------------------------
+// Disallowed functionality:
+
+// Strings
+// Numbers
+// Regular Expressions
+// Functions named "Hello", "World", "HelloWorld" or anything similar.
+// Object keys named "Hello", "World", "HelloWorld" or anything similar.
+// Without using the above, output the string "Hello World!" to prove that there is always a way.
+var helloWorld = function () {
+  // Hello world!
+}
+
 //----------------------------------
 
 function telephoneCheck(str) {

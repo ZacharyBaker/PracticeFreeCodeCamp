@@ -826,6 +826,20 @@ function add2(a, b) {
   return String(num);
 }
 
+//---------------------------
+
+var Person3 = function(){
+  var person = {
+    _name: "Leroy",
+    _friends: [],
+    fillFriends(f) {
+      for (var i = 0; i < f.length; i++){
+        this._friends.push(f[i]);
+      }
+    }
+  }
+  return person;
+}
 
 //------------------------------------
 

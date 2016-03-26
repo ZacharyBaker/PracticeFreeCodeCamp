@@ -818,6 +818,14 @@ class Person2 {
   }
   
 }
+//---------------------------------
+
+
+function add2(a, b) {
+  var num = Number(a) + Number(b);
+  return String(num);
+}
+
 
 //------------------------------------
 

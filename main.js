@@ -847,6 +847,27 @@ function buildString(...template){
   return `I like #{template.join(',')}`;
 }
 
+
+//-------------------------
+function last(list){
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //---------------------------
 // Disallowed functionality:
 

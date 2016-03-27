@@ -850,6 +850,17 @@ function buildString(...template){
 
 //-------------------------
 function last(list){
+
+
+    if (arguments.length < 2){
+    
+      var lastChar = list.length - 1;
+      return list[lastChar];
+    }
+    else {
+     var lastChar = arguments.length - 1;
+      return arguments[lastChar];
+    }
 }
 
 

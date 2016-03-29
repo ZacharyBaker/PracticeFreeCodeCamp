@@ -864,7 +864,14 @@ function last(list){
 }
 
 
+//---------------------------
 
+//python ish
+
+if 4 < 5 and 9 > 3:
+	print "happy babies"
+else:
+	print "sad babies"
 
 
 

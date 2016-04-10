@@ -877,7 +877,7 @@ else:
 //------------------------------------------
 
 function anyArrows(arrows){
-  
+  if (arrows.length < 1){return false;};
   return arrows.some( val => {
               if (!val['damaged']) return true;
           });

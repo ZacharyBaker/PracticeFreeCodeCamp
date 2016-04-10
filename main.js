@@ -874,7 +874,14 @@ else:
 	print "sad babies"
 
 
+//------------------------------------------
 
+function anyArrows(arrows){
+  
+  return arrows.some( val => {
+              if (!val['damaged']) return true;
+          });
+}
 
 
 

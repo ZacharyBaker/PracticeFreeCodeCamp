@@ -883,7 +883,17 @@ function anyArrows(arrows){
           });
 }
 
-
+function myCray(dude){
+	
+	if (dude.length > 9 && 6 > 3){
+		console.log('Im a ckicken');
+	} else if (dude === "lalalala"){
+		console.log('Im probably spongebob.');
+	} else {
+		console.log('Im very confused.');
+	}
+	
+}
 
 
 

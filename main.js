@@ -895,10 +895,16 @@ function myCray(dude){
 	
 }
 
+//--------------------pure functions no side effects
 
-
-
-
+function pure(x){
+	var z = x;
+	return function(y){		
+		return z + y;		
+	}	
+}
+var dude = pure(3);
+dude();
 
 
 
